@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catégories - Culture Générale</title>
+    <style>
+        body {
+            font-family: Arial Nova Light, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #015962;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #003f44;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+		
+		.search-bar {
+			display: flex;
+			align-items: center;
+			background-color: #ecf0f1;
+			border-radius: 5px;
+			padding: 5px;
+		}
+
+		.search-bar input[type="text"] {
+			border: none;
+			padding: 5px;
+			outline: none;
+			font-size: 1em;
+			background-color: transparent;
+		}
+
+		.search-bar button {
+			background: none;
+			border: none;
+			cursor: pointer;
+			font-size: 1.2em;
+		}
+        }
+	
+        }
+        .categories-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .category {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #017987;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .category h2 {
+            color: #015962;
+            margin-top: 0;
+        }
+        .category p {
+            color: #333;
+        }
+        .category button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #017987;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .category button:hover {
+            background-color: #015962;
+        }
+        @media (max-width: 768px) {
+            .categories-container {
+                grid-template-columns: 1fr;
+            }
+        }
+		footer {
+            background-color: #015962;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Catégories</h1>
+    <p>Explorez nos différentes catégories pour découvrir un monde de savoirs et de connaissances</p>
+</header>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="articles.html">Articles</a>
+    <a href="categories.html">Catégories</a>
+    <form class="search-bar" action="/recherche" method="get">
+        <input type="text" name="query" placeholder="Rechercher..." aria-label="Rechercher" />
+        <button type="submit">🔍</button>
+    </form>
+</nav>
+
+<section class="categories-container">
+    <div class="category">
+        <h2>Histoire et Société</h2>
+        <p>Comprend l’histoire des civilisations, les révolutions, les faits historiques marquants, les systèmes politiques et les changements sociaux.</p>
+        <button onclick="location.href='histoire-societe.html'">Découvrir</button>
+    </div>
+    <div class="category">
+        <h2>Culture et Traditions</h2>
+        <p>Regroupe les coutumes, les mythes, les légendes, les fêtes et les pratiques culturelles de différents pays ou régions.</p>
+        <button onclick="location.href='culture-traditions.html'">Découvrir</button>
+    </div>
+    <div class="category">
+        <h2>Arts et Littérature</h2>
+        <p>Inclut les œuvres littéraires, la poésie, les arts visuels, la musique, le cinéma, le théâtre et l’architecture.</p>
+        <button onclick="location.href='arts-litterature.html'">Découvrir</button>
+    </div>
+    <div class="category">
+        <h2>Langue et Étymologie</h2>
+        <p>Explique les origines des mots, les évolutions linguistiques, les expressions idiomatiques et les spécificités des langues.</p>
+        <button onclick="location.href='langue-etymologie.html'">Découvrir</button>
+    </div>
+    <div class="category">
+        <h2>Sciences et Découvertes</h2>
+        <p>Couvre les avancées scientifiques, les grandes découvertes, les personnalités scientifiques influentes et les inventions.</p>
+        <button onclick="location.href='sciences-decouvertes.html'">Découvrir</button>
+    </div>
+    <div class="category">
+        <h2>Voyages et Géographie</h2>
+        <p>Inclut les explorations de pays, de villes, les paysages naturels, ainsi que la géographie humaine et culturelle.</p>
+        <button onclick="location.href='voyages-geographie.html'">Découvrir</button>
+    </div>
+    <div class="category">
+        <h2>Philosophie et Religion</h2>
+        <p>Rassemble les idées philosophiques, les croyances religieuses, les systèmes de pensée et les figures influentes.</p>
+        <button onclick="location.href='philosophie-religion.html'">Découvrir</button>
+    </div>
+    <div class="category">
+        <h2>Sociologie et Psychologie</h2>
+        <p>Englobe l’étude des comportements humains, les théories de la psychologie, les relations interpersonnelles et les structures sociales.</p>
+        <button onclick="location.href='sociologie-psychologie.html'">Découvrir</button>
+    </div>
+    <div class="category">
+        <h2>Mode et Esthétique</h2>
+        <p>Porte sur les tendances vestimentaires, les courants esthétiques, les mouvements artistiques influents et l'évolution du style.</p>
+        <button onclick="location.href='mode-esthetique.html'">Découvrir</button>
+    </div>
+    <div class="category">
+        <h2>Innovation et Technologie</h2>
+        <p>Traite des innovations, de l’impact des nouvelles technologies, de l’informatique, et des avancées dans divers domaines techniques.</p>
+        <button onclick="location.href='innovation-technologie.html'">Découvrir</button>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2024 Culture Générale | Tous droits réservés.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture Générale - Accueil</title>
+    <style>
+        body {
+            font-family: Arial Nova Light, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #015962;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #003f44;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+		
+		.search-bar {
+			display: flex;
+			align-items: center;
+			background-color: #ecf0f1;
+			border-radius: 5px;
+			padding: 5px;
+		}
+
+		.search-bar input[type="text"] {
+			border: none;
+			padding: 5px;
+			outline: none;
+			font-size: 1em;
+			background-color: transparent;
+		}
+
+		.search-bar button {
+			background: none;
+			border: none;
+			cursor: pointer;
+			font-size: 1.2em;
+		}
+        }
+        .hero {
+            background: #017987;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+        }
+        .hero p {
+            font-size: 1.5em;
+        }
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+        }
+        .category {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            width: 20%;
+            text-align: center;
+        }
+        footer {
+            background-color: #015962;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+		.latest-post {
+		background-color: #ecf0f1;
+		padding: 20px;
+		margin: 20px;
+		border-radius: 8px;
+		}
+
+		.latest-post h2 {
+			color: #015962; /* bleu canard foncé */
+			text-align: center;
+		}
+
+		.post {
+			text-align: center;
+		}
+
+		.post h3 {
+			color: #017987; /* bleu canard */
+			margin: 10px 0;
+		}
+
+		.post p {
+			color: #333;
+			font-size: 1em;
+		}
+
+		.read-more {
+			display: inline-block;
+			margin-top: 10px;
+			padding: 10px 20px;
+			color: white;
+			background-color: #015962; /* bleu canard foncé */
+			text-decoration: none;
+			border-radius: 5px;
+			transition: background-color 0.3s;
+		}
+
+		.read-more:hover {
+			background-color: #003f44; /* encore plus foncé pour l'effet hover */
+		}
+		
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenue sur La culture générale du jour</h1>
+    <p>Explorez, découvrez, apprenez chaque jour !</p>
+</header>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="articles.html">Articles</a>
+    <a href="categories.html">Catégories</a>
+    <form class="search-bar" action="/recherche" method="get">
+        <input type="text" name="query" placeholder="Rechercher un article..." aria-label="Rechercher" />
+        <button type="submit">🔍</button>
+    </form>
+</nav>
+
+
+<section class="hero">
+    <h1>Plongez dans le monde du savoir</h1>
+    <p>Des faits étonnants, des connaissances essentielles, et bien plus encore.</p>
+</section>
+
+<section class="latest-post">
+    <h2>Dernier Post</h2>
+    <article class="post">
+		<h3>28 octobre 2024</h3>
+        <h3>Les prénoms allemands – Origines, significations et popularité</h3>
+        <p>Explorez l’origine, la signification et la popularité de quatre prénoms allemands traditionnels, révélant leur lien avec la culture et les valeurs historiques germaniques.</p>
+        <a href="sujet1.html" class="read-more">Lire plus</a>
+    </article>
+</section>
+
+<section class="categories">
+    <div class="category">
+        <h2>Histoire</h2>
+        <p>Voyagez dans le passé et découvrez les événements qui ont façonné notre monde.</p>
+    </div>
+    <div class="category">
+        <h2>Science</h2>
+        <p>Explorez les merveilles de la science, de l'espace aux avancées technologiques.</p>
+    </div>
+    <div class="category">
+        <h2>Arts</h2>
+        <p>Plongez dans le monde de l'art, de la peinture à la littérature.</p>
+    </div>
+    <div class="category">
+        <h2>Géographie</h2>
+        <p>Découvrez des lieux étonnants, leurs cultures et leur histoire.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Culture Générale | Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
